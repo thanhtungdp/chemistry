@@ -9,7 +9,7 @@
 	<title>Chemistry Dictionary</title>
 </head>
 <body>
-<nav class="navbar navbar-default navbar-static-top" role="navigation" id="navbar">
+<nav class="navbar navbar-default navbar-static-top box-shadow" role="navigation" id="navbar">
   <!-- Brand and toggle get grouped for better mobile display -->
   <div class="container">
 	  <div class="navbar-header">
@@ -19,23 +19,11 @@
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	    </button>
-	    <a class="navbar-brand" href="#">Chemistry Dictionary</a>
+	    <a class="navbar-brand" href="#">Từ điển hóa học</a>
 	  </div>
 
 	  <!-- Collect the nav links, forms, and other content for toggling -->
 	  <div class="collapse navbar-collapse" id="menu-list">
-	    <!--ul class="nav navbar-nav navbar-right">
-	      <li class="dropdown">
-	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trang khác <b class="caret"></b></a>
-	        <ul class="dropdown-menu">
-	          <li><a href="#">Action</a></li>
-	          <li><a href="#">Another action</a></li>
-	          <li><a href="#">Something else here</a></li>
-	          <li class="divider"></li>
-	          <li><a href="#">Separated link</a></li>
-	        </ul>
-	      </li>
-	    </ul-->
 	    <div class="nav navbar-nav navbar-right" id="button-menu-dropdown">
 		    <div class="btn-group">
 			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -57,19 +45,86 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4">
-				<div class="list-group">
-					<a href="#" class="list-group-item"><span class="icon-sprite"></span>Tìm kiếm phương trình</a>
-					<a href="#" class="list-group-item"><span class="icon-sprite icon-balanced"></span>Cân bằng phương trình</a>
-					<a href="#" class="list-group-item"><span class="icon-sprite icon-chainreaction"></span>Giải chuỗi phương trình</a>
-					<a href="#" class="list-group-item"><span class="icon-sprite icon-periodic"></span>Bảng tuần hoàn</a>
+				<div class="list-group box-shadow">
+					<a href="#" class="list-group-item item-find-equation actived"><span class="icon-sprite"></span>Tìm kiếm phương trình</a>
+					<a href="#" class="list-group-item item-balanced-equation"><span class="icon-sprite icon-balanced"></span>Cân bằng phương trình</a>
+					<a href="#" class="list-group-item item-chainreaction"><span class="icon-sprite icon-chainreaction"></span>Giải chuỗi phương trình</a>
+					<a href="#" class="list-group-item item-periodic"><span class="icon-sprite icon-periodic"></span>Bảng tuần hoàn</a>
 				</div>		
 			</div>
 			<div class="col-md-8">
-				Tung Cu2
-			</div>
-		</div>
-	</div>
+				<form action="" id="frm">
+					<input type="text" class="form-control input-form col-md-5 " placeholder="Chất tham gia"/>
+					<input type="text" class="form-control input-form col-md-5" placeholder="Chất sản phẩm"/>
+					<button class="btn">Tìm kiếm</button>
+				</form>
+				<div id="search-results" class="box-shadow">
+					<h4>10 kết quả trả về</h4>
+					<div class="result">						
+						<div class="equation">
+							Fe <span class="span-color">+</span> Cl<sub>2</sub> <span class="span-color">=</span> FeCl<sub>3</sub> <span class="span-color">+</span> FeCl<sub>3</sub> <span class="span-color">+</span> FeCl<sub>3</sub>
+						</div>
+						<div class="conditions">
+							<span class="icon-conditions"></span>
+							Điều kiện: Nhiệt độ cao  -  Xúc tác: Benzen  -  Hiện tượng: Kết tủa
+						</div>
+					</div>
+					<div class="result">						
+						<div class="equation">
+							Fe<span class="span-color">+</span>Cl<sub>2</sub><span class="span-color">=</span>FeCl<sub>3</sub>
+						</div>
+						<div class="conditions">
+							<span class="icon-conditions"></span>
+							Điều kiện: Nhiệt độ cao  -  Xúc tác: Benzen  -  Hiện tượng: Kết tủa
+						</div>
+					</div>
+					<div class="result">						
+						<div class="equation">
+							Fe<span class="span-color">+</span>Cl<sub>2</sub><span class="span-color">=</span>FeCl<sub>3</sub>
+						</div>
+						<div class="conditions">
+							<span class="icon-conditions"></span>
+							Điều kiện: Nhiệt độ cao  -  Xúc tác: Benzen  -  Hiện tượng: Kết tủa
+						</div>
+					</div>
+					<div class="result">						
+						<div class="equation">
+							Fe<span class="span-color">+</span>Cl<sub>2</sub><span class="span-color">=</span>FeCl<sub>3</sub>
+						</div>
+						<div class="conditions">
+							<span class="icon-conditions"></span>
+							Điều kiện: Nhiệt độ cao  -  Xúc tác: Benzen  -  Hiện tượng: Kết tủa
+						</div>
+					</div>
+					<div class="result">						
+						<div class="equation">
+							Fe<span class="span-color">+</span>Cl<sub>2</sub><span class="span-color">=</span>FeCl<sub>3</sub>
+						</div>
+						<div class="conditions">
+							<span class="icon-conditions"></span>
+							Điều kiện: Nhiệt độ cao  -  Xúc tác: Benzen  -  Hiện tượng: Kết tủa
+						</div>
+					</div>
+					<div class="text-center">
+					  <ul class="pagination">
+					    <li class="disabled"><a href="#">« Previous</a></li> 
+					    <li class="active"><a title="Go to page 1 of 12" href="#">1</a></li> 
+					    <li><a title="Go to page 2 of 12" href="/index.php?page=2&ipp=10">2</a></li> 
+					    <li><a title="Go to page 3 of 12" href="/index.php?page=3&ipp=10">3</a></li> 
+					    <li><a href="/index.php?page=2&ipp=10">Next »</a></li>
+					  </ul>
+					</div>
+				</div>
+			</div><!--End col-md-8-->
+		</div><!--End row-->
+	</div><!--End container-->
 </section>
+<footer class="box-shadow">
+	<div class="container">
+		<p class="pull-left">Copyright &copy SmartNet</p>
+		<p class="pull-right">Designed by DavidEvans</p>
+	</div>
+</footer>
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 </body>
